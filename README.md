@@ -2,7 +2,7 @@
 
 ComboBox by JavaFX2.
 
-Display English and Japanese by cocktail name.  
+Display English and Japanese by select cocktail name.  
 Process in the following three ways.
 
 * Event Handler ... Execute processing by select.
