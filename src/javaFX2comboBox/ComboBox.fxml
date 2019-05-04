@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javaFX2comboBox.ComboBoxController">
+  <children>
+    <VBox layoutX="20.0" layoutY="20.0" prefHeight="-1.0" prefWidth="-1.0" spacing="50.0">
+      <children>
+        <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0">
+          <children>
+            <Label text="* Using Event Handler" />
+            <HBox prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <ComboBox fx:id="cmb" disable="false" onAction="#cmbOnAction">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="アイテム1" />
+                      <String fx:value="アイテム2" />
+                      <String fx:value="アイテム3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <VBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="5.0">
+                  <children>
+                    <TextField fx:id="txf01" alignment="CENTER" editable="false" prefWidth="200.0" style="-fx-background-color: beige;" />
+                    <TextField fx:id="txf02" alignment="CENTER" editable="false" prefWidth="200.0" style="-fx-background-color: beige;" />
+                  </children>
+                </VBox>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0">
+          <children>
+            <Label text="* Using Bind (High-level API)" />
+            <HBox prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <ComboBox fx:id="cmbHBind">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="アイテム1" />
+                      <String fx:value="アイテム2" />
+                      <String fx:value="アイテム3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0">
+                  <children>
+                    <TextField fx:id="txf01HBind" alignment="CENTER" editable="false" prefWidth="200.0" style="-fx-background-color: beige;" />
+                  </children>
+                </VBox>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0">
+          <children>
+            <Label text="* Using Bind (Low-level API)" />
+            <HBox prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <ComboBox fx:id="cmbLBind">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="アイテム1" />
+                      <String fx:value="アイテム2" />
+                      <String fx:value="アイテム3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0">
+                  <children>
+                    <TextField fx:id="txf01LBind" alignment="CENTER" editable="false" prefWidth="200.0" style="-fx-background-color: beige;" />
+                    <TextField fx:id="txf02LBind" alignment="CENTER" editable="false" prefWidth="200.0" style="-fx-background-color: beige;" />
+                  </children>
+                </VBox>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
